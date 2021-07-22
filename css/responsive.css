@@ -1,0 +1,142 @@
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .top-menu-wrapper .menu {
+    display: none;
+  }
+  .top-menu-wrapper .search-icon {
+    display: none;
+  }
+
+  .newletter {
+    padding: 10px;
+  }
+  .newletter .newletter-text, .newletter .line {
+    display: none;
+  }
+  .newletter h1 {
+    font-size: 30px;
+  }
+
+  footer .footer-wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .banner-section .banner-wrapper {
+    padding: 15px 0px;
+  }
+  .banner-section .banner-wrapper .banner-item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 80px solid #FDE2CF;
+    border-right: 0px solid #00000000;
+    width: 0;
+  }
+
+  .product-category-wrapper .product-category-item-1 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 8;
+  }
+  .product-category-wrapper .product-category-item-2 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 8;
+    grid-row-end: 13;
+  }
+  .product-category-wrapper .product-category-item-3 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 13;
+    grid-row-end: 20;
+  }
+  .product-category-wrapper .product-category-item-4 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 20;
+    grid-row-end: 25;
+  }
+  .product-category-wrapper .product-category-item-5 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 25;
+    grid-row-end: 30;
+  }
+  .product-category-wrapper .product-category-item-6 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 30;
+    grid-row-end: 34;
+  }
+  .product-category-wrapper .product-category-item-7 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 34;
+    grid-row-end: 38;
+  }
+
+  .mobile-footer {
+    display: block;
+    background-color: #F5F5F5;
+  }
+  .mobile-footer input[type=email] {
+    padding: 10px;
+    width: 140px;
+  }
+  .mobile-footer input[type=submit] {
+    padding: 11px;
+    margin-left: -5px;
+    background: #000;
+    color: #fff;
+    border: none;
+  }
+  .mobile-footer .newsletter-form {
+    background-color: #EE5A5A;
+    text-align: center;
+    padding: 36px;
+    color: #fff;
+  }
+  .mobile-footer .newsletter-form img {
+    width: 60px;
+  }
+  .mobile-footer .newsletter-form h2 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 28px;
+  }
+  .mobile-footer .mobile-footer-menu {
+    text-align: center;
+    color: #8F99A1;
+    padding: 40px;
+  }
+  .mobile-footer .mobile-footer-menu ul {
+    list-style: none;
+    margin-left: -30px;
+    font-size: 20px;
+  }
+  .mobile-footer .mobile-footer-menu ul li {
+    padding: 5px 0px;
+  }
+  .mobile-footer .mobile-footer-menu ul a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+    opacity: 0.7;
+  }
+  .mobile-footer .mobile-footer-menu .social-media-icon a {
+    margin: 10px;
+  }
+  .mobile-footer .mobile-footer-menu .social-media-icon a img {
+    width: 40px;
+  }
+
+  footer {
+    display: none;
+  }
+}
