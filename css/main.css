@@ -194,6 +194,7 @@ footer .footer-wrapper ul li {
 }
 
 .sidemenu-wrapper {
+  display: none;
   position: fixed;
   padding: 73px 20px;
   right: 0;
