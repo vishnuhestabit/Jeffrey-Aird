@@ -4,4 +4,6 @@ Technologies are used.
 
 HTML,
 CSS,
+SCSS,
 JQuery
+Gulp,
