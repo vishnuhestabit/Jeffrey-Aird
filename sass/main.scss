@@ -202,32 +202,38 @@ footer{
     display: none;
 }
 .sidemenu-wrapper{
-    display: none;
+    overflow: scroll;
+  display: none;
     position: fixed;
-    padding: 73px 20px;
+    padding: 50px 20px;
     right: 0;
     top: 0;
     width: 400px;
     z-index: 9999;
-    background: #fff;
+    background: #FAFAFA;
     height: 100%;
     text-align: right;
     font-size: 25px;
     img.close{
         width: 30px;
+        margin-bottom: 21px;
+        cursor: pointer;
     }
     img.sidesearch{
         width: 25px;
         position: absolute;
-        top: 12px;
-        left: 45px;
+        top: 125px;
+        left: 35px;
     }
     input[type='text']{
-    position: relative;
-    padding: 7px;
-    text-indent: 30px;
-    font-size: 25px;
-    width: 100%;
+        position: relative;
+        padding: 12px;
+        text-indent: 30px;
+        font-size: 30px;
+        width: 94%;
+        border-radius: 30px;
+        border: none;
+        background: #F1F1F1;
     }
     input:focus{
         outline: none;
@@ -235,8 +241,33 @@ footer{
     ul{
         list-style: none;
         text-align: left;
+        font-family: $menufont;
+        li{
+            padding: 20px 0px;
+            margin-left: -27px;
+            position: relative;
+            cursor: pointer;
+        }
         a{
             text-decoration: none;
+            color: $secondry_color;
         }
     }
+}
+.have-child:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: 10px;
+    right: 5px;
+    position: absolute;
+    cursor: pointer;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.sub-menu{
+    display: none;
 }

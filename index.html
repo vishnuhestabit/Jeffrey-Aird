@@ -36,7 +36,7 @@
                 <li class="search-icon"><a href=""><img src="img/icons/loupe.png"></a></li>
                 <li><a href=""><img src="img/icons/telephone.png"></a></li>
                 <li><a href=""><img src="img/icons/paper-bag.png"></a></li>
-                <li><a href="javascript:void(0)"><img src="img/icons/menu.png"></a></li>
+                <li><a href="javascript:void(0)" id="sidemenuicon"><img src="img/icons/menu.png"></a></li>
             </ul>
           </div>
       </div>
@@ -51,12 +51,33 @@
  
   <img src="img/icons/loupe.png" class="sidesearch">
   <ul>
-    <li><a href="">RUGS</a></li>
-                  <li><a href="">FURNITURE</a></li>
-                  <li><a href="">LIGHTING</a></li>
-                  <li><a href="">DECOR</a></li>
-                  <li><a href="">PROJECT GALLERY</a></li>
-                  <li><a href="">ABOUT</a></li>
+                  <li class="have-child">
+                    <a href="">Rugs</a>
+                    <ul class="sub-menu">
+                      <li><a href="">Rugs</a></li>
+                      <li><a href="">Furniture</a></li>
+                    </ul> 
+                  </li>
+                  <li class="have-child"><a href="">Furniture</a>
+                    <ul class="sub-menu">
+                      <li><a href="">Rugs</a></li>
+                      <li><a href="">Furniture</a></li>
+                    </ul> 
+                  </li>
+                  <li class="have-child"><a href="">Lighting</a>
+                  
+                    <ul class="sub-menu">
+                      <li><a href="">Rugs</a></li>
+                      <li><a href="">Furniture</a></li>
+                    </ul> 
+                  </li>
+                  <li class="have-child"><a href="">Decore</a>
+                    <ul class="sub-menu">
+                      <li><a href="">Rugs</a></li>
+                      <li><a href="">Furniture</a></li>
+                    </ul> </li>
+                  <li><a href="">Project Gallery</a></li>
+                  <li><a href="">About</a></li>
   </ul>
 </div>
 <!--Side Menu end-->
@@ -209,6 +230,15 @@
   dots: false,
   prevArrow: '<span class="left-arrow"><img src="img/icons/arrow.png"></span>',
   nextArrow:'<span class="right-arrow"><img src="img/icons/right-arrow.png"></span>',
+  });
+  $('#sidemenuicon').click(function(){
+    $('.sidemenu-wrapper').show();
+  });
+  $('.close').click(function(){
+    $('.sidemenu-wrapper').hide();
+  });
+  $('.have-child').click(function(){
+    $(this).find('.sub-menu').toggle();
   });
 </script>
 </body>
